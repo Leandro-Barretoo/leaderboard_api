@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  position: relative;
+}
+
+.main-title {
+  margin: 0;
+  padding: 15px 10px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  flex: 1;
+  margin: 20px 10px;
+}
+
+.box-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.table {
+  border: 2px solid black;
+  width: 100%;
+}
+
+.form {
+  width: min-content;
+  margin: 0 auto;
+}
+
+.form input {
+  display: block;
+  margin: 20px 0;
+  float: right;
+  clear: both;
+  overflow: hidden;
+}
+
+.text-inputs {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.text-inputs::placeholder {
+  font-weight: 600;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.submit {
+  padding: 5px;
+  border: 2px solid black;
+  box-shadow: 3px 3px black;
+}
+
+.copyright {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+.copyright p {
+  margin: 0;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-title {
+    padding: 25px 25px;
+    font-size: 2.5rem;
+  }
+
+  .main-container {
+    flex-direction: inherit;
+  }
+
+  .box {
+    margin: 20px 20px;
+  }
+}

@@ -2,58 +2,42 @@
 
 # Project Name
 
-> One paragraph statement about the project.
+> Leaderboard website that displays scores submitted by different players.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./leaderboard.png)
 
-Additional description about the project and its features.
+Allows you to submit your score and all data is preserved thanks to the external Leaderboard API service.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML5, CSS3, JavaScript
+- Webpack
+- ES6 Syntax
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://leandro-barretoo.github.io/leaderboard_api/)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
 
 ### Setup
 
-### Install
+- Clone the repo `git clone git@github.com:Leandro-Barretoo/ToDo_Redo.git`
+- `cd` into the directory
+- run `npm i` or `npm install` to download required node_modules
+- checkout to the desired branch `git chechout`
+- open in your desired code editor
+- run `npm start` to start live server
 
-### Usage
+## Author
 
-### Run tests
+👤 **Leandro Barreto**
 
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Leandro-Barretoo](https://github.com/Leandro-Barretoo)
+- LinkedIn: [Leandro Barreto](https://www.linkedin.com/in/leandroobarreto/)
 
 ## 🤝 Contributing
 
