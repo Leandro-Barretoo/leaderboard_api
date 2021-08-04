@@ -1,9 +1,9 @@
 import { addInfo } from './display-table';
 
-const sendData = (name, score) => {
-  fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/EO65suUhDU47wLiHboGe/scores/', {
+const sendData = async (name, score) => {
+  await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/d9dwZQRTRj3m1AqR6ORz/scores/', {
     method: 'POST',
-    body: JSON.stringify({ user: name, score:  score }),
+    body: JSON.stringify({ user: name, score }),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     },
@@ -11,10 +11,10 @@ const sendData = (name, score) => {
     .then((response) => response.json());
 };
 
-const addScore = () => {
+const addScore = async () => {
   const name = document.querySelector('#name').value;
   const score = document.querySelector('#score').value;
-  sendData(name, score);
+  await sendData(name, score);
   addInfo(name, score);
 };
 
