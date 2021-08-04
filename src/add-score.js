@@ -1,6 +1,6 @@
 import { addInfo } from './display-table';
 
-function sendData(name, score) {
+const sendData = (name, score) => {
   fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/EO65suUhDU47wLiHboGe/scores/', {
     method: 'POST',
     body: JSON.stringify({ user: name, score }),
@@ -9,7 +9,7 @@ function sendData(name, score) {
     },
   })
     .then((response) => response.json());
-}
+};
 
 export default function addScore() {
   const name = document.querySelector('#name').value;

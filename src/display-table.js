@@ -4,7 +4,7 @@ const getUsers = async () => {
   return data;
 };
 
-export function addInfo(user, score) {
+export const addInfo = (user, score) => {
   const table = document.querySelector('.table');
   const tableRow = document.createElement('tr');
   const tableName = document.createElement('td');
@@ -14,12 +14,12 @@ export function addInfo(user, score) {
   tableScore.innerHTML = score;
   tableRow.appendChild(tableScore);
   table.appendChild(tableRow);
-}
+};
 
-export async function displayTable() {
+export const displayTable = async () => {
   const ans = await getUsers();
   const userArr = ans.result;
   for (let i = 0; i < userArr.length; i += 1) {
     addInfo(userArr[i].user, userArr[i].score);
   }
-}
+};
