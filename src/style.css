@@ -24,10 +24,17 @@ body {
   margin: 20px 10px;
 }
 
+.title-refresh {
+  display: flex;
+  margin-bottom: 20px;
+}
+
 .box-title {
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
+  margin: 0;
+  flex: 2;
 }
 
 .table {
@@ -58,7 +65,8 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
-.submit {
+.submit,
+.refresh {
   padding: 5px;
   border: 2px solid black;
   box-shadow: 3px 3px black;
