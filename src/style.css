@@ -98,10 +98,6 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  body {
-    height: 100vh;
-  }
-
   .main-title {
     padding: 25px 25px;
     font-size: 2.5rem;

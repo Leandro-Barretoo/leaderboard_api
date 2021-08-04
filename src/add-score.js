@@ -3,7 +3,7 @@ import { addInfo } from './display-table';
 const sendData = (name, score) => {
   fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/EO65suUhDU47wLiHboGe/scores/', {
     method: 'POST',
-    body: JSON.stringify({ user: name, score }),
+    body: JSON.stringify({ user: name, score:  score }),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     },
