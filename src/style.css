@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 
 body {
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
   position: relative;
+  background-image: linear-gradient(#9ec1a3, #cfe0c3);
 }
 
 .main-title {
   margin: 0;
   padding: 15px 10px;
+  color: #1f363d;
+  text-shadow: -3px 3px #40798c;
 }
 
 .main-container {
@@ -35,10 +38,15 @@ body {
   text-align: center;
   margin: 0;
   flex: 2;
+  color: #1f363d;
 }
 
 .table {
-  border: 2px solid black;
+  border: none;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px grey;
+  background-color: #cfe0c3;
   width: 100%;
 }
 
@@ -56,27 +64,32 @@ body {
 }
 
 .text-inputs {
-  border: 2px solid black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 10px grey;
+  background-color: #cfe0ce;
   padding: 10px;
 }
 
 .text-inputs::placeholder {
   font-weight: 600;
   font-family: 'Quicksand', sans-serif;
+  color: #1f363d;
 }
 
 .submit,
 .refresh {
-  padding: 5px;
-  border: 2px solid black;
-  box-shadow: 3px 3px black;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-family: inherit;
+  box-shadow: 0 0 20px grey;
 }
 
 .copyright {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
   text-align: center;
+  font-family: inherit;
+  color: #1f363d;
 }
 
 .copyright p {
@@ -85,6 +98,10 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+
   .main-title {
     padding: 25px 25px;
     font-size: 2.5rem;
