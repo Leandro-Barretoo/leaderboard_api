@@ -19,7 +19,7 @@ export const addInfo = (user, score) => {
 export const displayTable = async () => {
   const ans = await getUsers();
   const userArr = ans.result;
-  for (let i = 0; i < userArr.length; i += 1) {
-    addInfo(userArr[i].user, userArr[i].score);
-  }
+  userArr.forEach((item) => {
+    addInfo(item.user, item.score);
+  });
 };

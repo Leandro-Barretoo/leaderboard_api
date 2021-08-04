@@ -11,9 +11,11 @@ const sendData = (name, score) => {
     .then((response) => response.json());
 };
 
-export default function addScore() {
+const addScore = () => {
   const name = document.querySelector('#name').value;
   const score = document.querySelector('#score').value;
   sendData(name, score);
   addInfo(name, score);
-}
+};
+
+export default addScore;
