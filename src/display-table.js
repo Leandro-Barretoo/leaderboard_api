@@ -1,5 +1,5 @@
 const getUsers = async () => {
-  const request = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/d9dwZQRTRj3m1AqR6ORz/scores/');
+  const request = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/jmUrERqBJAHRA8tmbVtb/scores/');
   const data = await request.json();
   return data;
 };

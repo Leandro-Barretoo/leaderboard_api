@@ -19,6 +19,16 @@ Allows you to submit your score and all data is preserved thanks to the external
 
 [Live Demo Link](https://leandro-barretoo.github.io/leaderboard_api/)
 
+### Rules to send scores
+
+#### Name:
+
+- Name length should be at least 3 characters (not numbers) long and not exceed 20 characters;
+
+#### Score:
+
+- Score cannot be empty. And it goes from 0 to 10000;
+
 
 ## Getting Started
 

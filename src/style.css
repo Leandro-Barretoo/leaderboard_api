@@ -8,6 +8,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   position: relative;
   background-image: linear-gradient(#9ec1a3, #cfe0c3);
+  background-attachment: fixed;
 }
 
 .main-title {
@@ -53,14 +54,14 @@ body {
 .form {
   width: min-content;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
 }
 
 .form input {
   display: block;
   margin: 20px 0;
-  float: right;
-  clear: both;
-  overflow: hidden;
 }
 
 .text-inputs {
@@ -86,6 +87,10 @@ body {
   box-shadow: 0 0 20px grey;
 }
 
+.submit {
+  width: min-content;
+}
+
 .copyright {
   text-align: center;
   font-family: inherit;
@@ -95,6 +100,13 @@ body {
 .copyright p {
   margin: 0;
   padding: 10px;
+}
+
+.alerts {
+  padding: 5px;
+  text-align: center;
+  color: grey;
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {

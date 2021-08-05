@@ -22,10 +22,12 @@
             <div class="box form-container">
                 <h2 class="box-title">Add your score</h2>
                 <form class="form">
-                    <input class="text-inputs" type="text" id="name" placeholder="Your name" required>
-                    <input class="text-inputs" type="text" id="score" placeholder="Your score" required>
+                    <input class="text-inputs" type="text" id="name" placeholder="Your name" required minlength="1" maxlength="15">
+                    <input class="text-inputs" type="number" id="score" placeholder="Your score" required  min="0" max="10000">
                     <input class="submit" type="submit" value="Submit">
                 </form>
+                <span class="alerts">Name: should have at least 3 characters (not numbers)</span>
+                <span class="alerts">Score: cannot be empty. Choose between 0 and 10000</span>
             </div>
         </div>
     </section>
